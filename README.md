@@ -31,6 +31,16 @@ Each time this node is processed, it will increment the named metric:
 
 ![ScreenShot](./chrome-user-agent-metric.png)
 
+## Enabling JMX
+
+JMX access to AM metrics is disabled by default. To enable:
+
+* login to the AM console as AM administrator, and navigate to Configure > Global Services > Monitoring.
+* ensure "Monitoring Status" is enabled.
+* ensure "Monitoring RMI interface status" is enabled.
+
+You can use tools such as jconsole (included in the Java JDK /bin directory) to connect to AM via JMX.
+
 ## To Build
 
 The code in this repository has binary dependencies that live in the ForgeRock maven repository. Maven can be configured to authenticate to this repository by following the following [ForgeRock Knowledge Base Article](https://backstage.forgerock.com/knowledge/kb/article/a74096897).
